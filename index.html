@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>爸爸再打我一次！</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<audio src="images/bgMusic.mp3" autoplay="autoplay" loop="loop"></audio>
+	<div class="page-box index">
+		<div class="page page1">
+			<img src="images/indexTxt.png" class="afterschool scalein animation-delay200ms"/>
+			<div class="me topin animation-delay200ms">
+				<img src="images/caab13fcafe83165527d8c9c65b8d669_origin.png" class="dance animation-delay1000ms"/>
+			</div>
+		</div>
+		<div class="page page2 hidden">
+			<img src="images/doorClose.jpg" class="door1"/>
+			<img src="images/fingerLeft.png" class="finger fingertouch1 animation-delay500ms"/>
+			<img src="images/doorOpen.jpg" class="door2 fadeinslow hidden"/>
+			<img src="images/imBack.png" class="back fadeinslow hidden animation-delay500ms"/>
+			<img src="images/getAway.png" class="getaway bigin hidden animation-delay1500ms"/>
+			<img src="images/sheo.png" class="sheo rotatein hidden animation-delay1500ms"/>
+			<img src="images/white.jpg" class="bg fadein hidden animation-delay2000ms"/>
+			<img src="images/feec48ea65b90a72af1cc95ade6a0781_origin.png" class="me rightin hidden animation-delay2000ms"/>
+			<img src="images/why.png" class="why fadein hidden animation-delay2500ms"/>
+		    <script>
+		    	    $('.index .page2 .door1').click(function(){
+		    	    	    $('.index .page2 .door2').removeClass('hidden');
+		    	    	    $('.index .page2 .back').removeClass('hidden');
+		    	    	    $('.index .page2 .getaway').removeClass('hidden');
+		    	    	    $('.index .page2 .sheo').removeClass('hidden');
+		    	    	    $('.index .page2 .bg').removeClass('hidden');
+		    	    	    $('.index .page2 .me').removeClass('hidden');
+		    	    	    $('.index .page2 .why').removeClass('hidden');
+		    	    })
+		    </script>
+		</div>
+		<div class="page page3 hidden">
+			<img src="images/f8920fa5e5caff5625860d958ecd524b_origin_grPDvYL.png" class="bg"/>
+			<img src="images/c50d5e161eac676dbe9401c50c9fb030_origin.png" class="think walk animation-delay500ms"/>
+			<img src="images/question.png" class="guess fadein animation-delay200ms"/>
+			<img src="images/reason1.png" class="reason1 leftin animation-delay500ms"/>
+			<img src="images/reason2.png" class="reason2 leftin animation-delay1000ms"/>
+			<img src="images/reason3.png" class="reason3 leftin animation-delay1500ms"/>
+			<img src="images/reason4.png" class="reason4 leftin animation-delay2000ms"/>
+			<img src="images/f6e1479b2c1a579d5d8b4bd9a26d33a4_origin.png" class="reason5 leftin animation-delay2500ms"/>
+			<script>
+				$('.index .page3 .leftin').click(function(){
+					var className = this.classList[0];
+					nextBox(className);
+				})
+			</script>
+		</div>
+	</div>
+	<div class="page-box reason1 hidden">
+		<div class="page page1">
+			<img src="images/chiBall.png" class="tv topin animation-delay200ms"/>
+			<img src="images/bear.png" class="bear leftin animation-delay200ms"/>
+			
+		</div>
+	</div>
+	
+</body>
+<script src="js/touchfunction.js" type="text/javascript" charset="utf-8"></script>
+</html>
